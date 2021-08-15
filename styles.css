@@ -26,7 +26,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 75%;
+    min-width: 75vw;
     margin: 0 auto;
     padding: 10%;
     border-radius: 25px;
@@ -71,6 +71,11 @@ p {
     grid-row: 1 / span 2;
     color: hsl(245, 75%, 52%);
     font-weight: 700;
+    transition: all .4s;
+}
+
+.cg-plan:hover {
+    color: hsl(224, 23%, 55%);
 }
 
 button {
@@ -87,6 +92,12 @@ button {
     background-color: hsl(245, 75%, 52%);
     border: none;
     border-radius: 15px;
+    transition: all .4s;
+}
+
+.cta:hover {
+    background-color: hsl(245, 75%, 62%);
+    cursor: pointer;
 }
 
 .cancel {
@@ -94,4 +105,10 @@ button {
     font-size: 16px;
     border: none;
     color: hsl(224, 23%, 55%);
+    transition: all .4s;
+}
+
+.cancel:hover {
+    color:hsl(223, 47%, 23%);
+    cursor: pointer;
 }
