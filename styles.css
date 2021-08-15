@@ -10,10 +10,15 @@ body {
 
 h1 {
     font-size: 24px;
+    margin: 10% 0 0 0;
+    color: hsl(223, 47%, 23%);
 }
 
 p {
     font-size: 16px;
+    margin: 5% 0 10% 0;
+    color:  hsl(224, 23%, 55%);
+    line-height: 1.8rem;
 }
 
 .container {
@@ -23,4 +28,70 @@ p {
     justify-content: center;
     width: 75%;
     margin: 0 auto;
+    padding: 10%;
+    border-radius: 25px;
+}
+
+.hero {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    column-gap: 10px;
+}
+
+ .icon {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    justify-self: center;
+}
+
+.plan {
+    font-weight: 900;
+    grid-column: 2 / span 1;
+    grid-row: 1 /  1;
+    justify-self: start;
+    color: hsl(223, 47%, 23%);
+}
+.price {
+    grid-column: 2 / span 1;
+    grid-row: 2 / 2; 
+    justify-self: start;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.cg-plan {
+    grid-column: 3 / 3;
+    grid-row: 1 / span 2;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+button {
+    margin: 10% auto 0;
+    height: 60px;
+    width: 90%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cta{
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 15px;
+}
+
+.cancel {
+    margin-top: 0;
+    font-size: 16px;
+    border: none;
+    color: hsl(224, 23%, 55%);
 }
