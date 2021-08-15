@@ -1,3 +1,26 @@
-h1 {
+* {
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
 }
